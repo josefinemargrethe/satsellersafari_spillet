@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+}
+
+#menu_background {
+    background-image: url(grafik/nybaggrund.svg);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+}
+
+#game_foreground {
+    background-image: url(grafik/nyforgrund.svg);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+    top: 0vw;
+    z-index: 1;
+}
+
+#baby {
+    background-image: url(grafik/baby.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 29vw;
+    left: 58.2vw;
+}
+
+#hest {
+    background-image: url(grafik/hest.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 28.7vw;
+    left: 30vw;
+}
+
+#diamant {
+    background-image: url(grafik/diamant.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 24.7vw;
+    left: 2vw;
+}
+
+#diamant2 {
+    background-image: url(grafik/diamant.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 32.7vw;
+    left: 45.5vw;
+}
+
+#baby2 {
+    background-image: url(grafik/baby.svg);
+    background-size: 100%;
+    width: 7vw;
+    height: 6.6vw;
+    position: absolute;
+    top: 21vw;
+    left: 68.2vw;
+}
+
+#hest2 {
+    background-image: url(grafik/hest.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 33.2vw;
+    left: 84vw;
+}
+
+
+#points {
+    background-image: url(grafik/point.svg);
+    background-size: 100%;
+    width: 6.5vw;
+    height: 3.3vw;
+    position: absolute;
+    top: 2vw;
+    left: 46.7vw;
+    z-index: 2;
+}
+
+#life {
+    background-image: url(grafik/1_liv.svg);
+    background-size: 100%;
+    width: 4vw;
+    height: 3.3vw;
+    position: absolute;
+    top: 2vw;
+    left: 92.7vw;
+    z-index: 2;
+}
+
+#life2 {
+    background-image: url(grafik/1_liv.svg);
+    background-size: 100%;
+    width: 4vw;
+    height: 3.3vw;
+    position: absolute;
+    top: 2vw;
+    left: 88.7vw;
+    z-index: 2;
+}
+
+#nolife {
+    background-image: url(grafik/0_liv.svg);
+    background-size: 100%;
+    width: 4vw;
+    height: 3.3vw;
+    position: absolute;
+    top: 2vw;
+    left: 84.7vw;
+    z-index: 2;
+}
+
+#time {
+    background-image: url(grafik/tid.svg);
+    background-size: 100%;
+    width: 8.5vw;
+    height: 3.3vw;
+    position: absolute;
+    top: 2vw;
+    left: 2.7vw;
+    z-index: 2;
+}
+
+
+/***** TITELSKÆRM hvor der er sat display: none *****/
+
+
+#start {
+    background-image: url(grafik/titelsk%C3%A6rm_baggrund.svg);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+    top: 0vw;
+    z-index: 3;
+    display: none;
+}
+
+
+
+#play {
+    background-image: url(grafik/play_knap.svg);
+    background-size: 100%;
+    width: 17vw;
+    height: 10.4vw;
+    position: absolute;
+    top: 21vw;
+    left: 42vw;
+    z-index: 4;
+    display: none;
+}
+
+#settings {
+    background-image: url(grafik/settings.svg);
+    background-size: 100%;
+    width: 50vw;
+    height: 33vw;
+    position: absolute;
+    top: 15vw;
+    left: 25vw;
+    z-index: 6;
+    display: none;
+}
+
+#luk {
+    background-image: url(grafik/luk_knap.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9vw;
+    position: absolute;
+    top: 16vw;
+    left: 64vw;
+    z-index: 7;
+    display: none;
+}
+
+#settings_knap {
+    background-image: url(grafik/settings_knap.svg);
+    background-size: 100%;
+    width: 9vw;
+    height: 9.4vw;
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    z-index: 4;
+    display: none;
+}
+
+#start_foreground {
+    background-image: url(grafik/titelsk%C3%A6rm_forggrund.svg);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+    top: 0vw;
+    z-index: 5;
+    display: none;
+}
+
+
+
+/***************** SPIL SLUT med display:none*******************/
+
+#gameover {
+    background-image: url(grafik/game_over.svg);
+    background-size: 100%;
+    width: 55vw;
+    height: 36vw;
+    position: absolute;
+    top: 10vw;
+    left: 22vw;
+    z-index: 5;
+    display: none;
+}
+
+#tryagain {
+    background-image: url(grafik/pr%C3%B8v_igen.svg);
+    background-size: 100%;
+    width: 20vw;
+    height: 7vw;
+    position: absolute;
+    top: 36vw;
+    left: 39vw;
+    z-index: 6;
+    display: none;
+}
+
+#levelcomplete {
+    background-image: url(grafik/level_complete.svg);
+    background-size: 100%;
+    width: 55vw;
+    height: 35.7vw;
+    position: absolute;
+    top: 10vw;
+    left: 22vw;
+    z-index: 5;
+    display: none;
+}
+
+#tryagain2 {
+    background-image: url(grafik/pr%C3%B8v_igen.svg);
+    background-size: 100%;
+    width: 20vw;
+    height: 7vw;
+    position: absolute;
+    top: 36vw;
+    left: 39vw;
+    z-index: 6;
+    display: none;
+}
+
+
+/***************** SPIL START INFO med display:none*******************/
+
+#startinfo {
+    background-image: url(grafik/startbesked.svg);
+    background-size: 100%;
+    width: 55vw;
+    height: 36.5vw;
+    position: absolute;
+    top: 10vw;
+    left: 22vw;
+    z-index: 5;
+    display: none;
+}
