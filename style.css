@@ -20,28 +20,32 @@ body {
     z-index: 1;
 }
 
-#baby {
+
+
+/********* GAME ELEMENTER ***********/
+
+#diamant1 {
+    background-image: url(grafik/diamant.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 24.7vw;
+    left: 2vw;
+}
+
+#baby1 {
     background-image: url(grafik/baby.svg);
     background-size: 100%;
     width: 10vw;
     height: 9.7vw;
     position: absolute;
-    top: 29vw;
-    left: 58.2vw;
+    top: 24.7vw;
+    left: 2vw;
 }
 
-#hest {
+#hest1 {
     background-image: url(grafik/hest.svg);
-    background-size: 100%;
-    width: 10vw;
-    height: 9.7vw;
-    position: absolute;
-    top: 28.7vw;
-    left: 30vw;
-}
-
-#diamant {
-    background-image: url(grafik/diamant.svg);
     background-size: 100%;
     width: 10vw;
     height: 9.7vw;
@@ -56,21 +60,260 @@ body {
     width: 10vw;
     height: 9.7vw;
     position: absolute;
-    top: 32.7vw;
-    left: 45.5vw;
+    top: 31vw;
+    left: 14.1vw;
+    transform: scale(0.8);
+}
+
+#hest2 {
+    background-image: url(grafik/hest.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 31vw;
+    left: 14.1vw;
+    transform: scale(0.8);
 }
 
 #baby2 {
     background-image: url(grafik/baby.svg);
     background-size: 100%;
-    width: 7vw;
-    height: 6.6vw;
+    width: 10vw;
+    height: 9.7vw;
     position: absolute;
-    top: 21vw;
-    left: 68.2vw;
+    top: 31vw;
+    left: 14.1vw;
+    transform: scale(0.8);
 }
 
-#hest2 {
+#diamant3 {
+    background-image: url(grafik/diamant.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 22.4vw;
+    left: 18.5vw;
+}
+
+#hest3 {
+    background-image: url(grafik/hest.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 22.4vw;
+    left: 18.5vw;
+}
+
+#baby3 {
+    background-image: url(grafik/baby.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 22.4vw;
+    left: 18.5vw;
+}
+
+
+#diamant4 {
+    background-image: url(grafik/diamant.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 29.7vw;
+    left: 30vw;
+    transform: scale(0.8)
+}
+
+#hest4 {
+    background-image: url(grafik/hest.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 28.7vw;
+    left: 30vw;
+}
+
+
+#baby4 {
+    background-image: url(grafik/baby.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 29.7vw;
+    left: 30vw;
+    transform: scale(0.8)
+}
+
+
+#diamant5 {
+    background-image: url(grafik/diamant.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 21.9vw;
+    left: 34vw;
+}
+
+#hest5 {
+    background-image: url(grafik/hest.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 21.9vw;
+    left: 34vw;
+}
+
+#baby5 {
+    background-image: url(grafik/baby.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 21.9vw;
+    left: 34vw;
+}
+
+#diamant6 {
+    background-image: url(grafik/diamant.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 32.7vw;
+    left: 45.5vw;
+}
+
+#hest6 {
+    background-image: url(grafik/hest.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 32.7vw;
+    left: 45.5vw;
+}
+
+#baby6 {
+    background-image: url(grafik/baby.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 32.7vw;
+    left: 45.5vw;
+}
+
+#diamant7 {
+    background-image: url(grafik/diamant.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 29vw;
+    left: 58.2vw;
+}
+
+#hest7 {
+    background-image: url(grafik/hest.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 29vw;
+    left: 58.2vw;
+}
+
+#baby7 {
+    background-image: url(grafik/baby.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 29vw;
+    left: 58.2vw;
+}
+
+
+#diamant8 {
+    background-image: url(grafik/diamant.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 18.5vw;
+    left: 66.7vw;
+}
+
+#hest8 {
+    background-image: url(grafik/hest.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 18.5vw;
+    left: 66.7vw;
+}
+
+#baby8 {
+    background-image: url(grafik/baby.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 18.5vw;
+    left: 66.7vw;
+}
+
+#diamant9 {
+    background-image: url(grafik/diamant.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 21.7vw;
+    left: 79.2vw;
+}
+
+#hest9 {
+    background-image: url(grafik/hest.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 21.7vw;
+    left: 79.2vw;
+}
+
+#baby9 {
+    background-image: url(grafik/baby.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 21.7vw;
+    left: 79.2vw;
+}
+
+#diamant10 {
+    background-image: url(grafik/diamant.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 33.2vw;
+    left: 84vw;
+}
+
+#hest10 {
     background-image: url(grafik/hest.svg);
     background-size: 100%;
     width: 10vw;
@@ -80,12 +323,112 @@ body {
     left: 84vw;
 }
 
+#baby10 {
+    background-image: url(grafik/baby.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    top: 33.2vw;
+    left: 84vw;
+}
+
+
+
+/************HIDE/SHOW GAME ELEMENTER**********/
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.in_out1 {
+    animation-name: in_out1;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+.in_out2 {
+    animation-name: in_out2;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-delay: 4s;
+}
+
+.in_out3 {
+    animation-name: in_out3;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-delay: 8s;
+}
+
+@keyframes in_out1 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes in_out2 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes in_out3 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/************UI GAME ELEMENTER**********/
 
 #points {
     background-image: url(grafik/point.svg);
     background-size: 100%;
     width: 6.5vw;
-    height: 3.3vw;
+    height: 3.5vw;
     position: absolute;
     top: 2vw;
     left: 46.7vw;
@@ -129,7 +472,7 @@ body {
     background-image: url(grafik/tid.svg);
     background-size: 100%;
     width: 8.5vw;
-    height: 3.3vw;
+    height: 3.5vw;
     position: absolute;
     top: 2vw;
     left: 2.7vw;
@@ -271,10 +614,22 @@ body {
     background-image: url(grafik/startbesked.svg);
     background-size: 100%;
     width: 55vw;
-    height: 36.5vw;
+    height: 36.7vw;
     position: absolute;
     top: 10vw;
     left: 22vw;
     z-index: 5;
+    display: none;
+}
+
+#luk2 {
+    background-image: url(grafik/luk_knap.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9vw;
+    position: absolute;
+    top: 10vw;
+    left: 66vw;
+    z-index: 7;
     display: none;
 }
