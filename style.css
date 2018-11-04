@@ -595,32 +595,11 @@ body {
     position: absolute;
     top: 2.2vw;
     left: 46.7vw;
-    color: white;
+    color: black;
     font-family: 'VT323', monospace;
     font-size: 1rem;
     display: flex;
 }
-
-
-/*
-#points {
-  position: absolute;
-  left: 87vw;
-  color: white;
-  font-size: 2rem;
-  font-family: sans-serif;
-  display: flex;
-}
-*/
-
-/*
-#points .coin {
-  background-image: url(coin.svg);
-  background-size: 100%;
-  width: 2rem;
-  height: 2rem;
-}
-*/
 
 #points .antal {
     /*  outline: 2px solid red;*/
