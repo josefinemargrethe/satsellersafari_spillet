@@ -1,3 +1,7 @@
+/*** TIL POINT FONT:
+font-family: 'VT323', monospace;
+**/
+
 body {
     margin: 0;
 }
@@ -9,13 +13,14 @@ body {
     position: relative;
 }
 
-#menu_background {
+#game_background {
     background-image: url(grafik/nybaggrund.svg);
     background-size: 100%;
     width: 100vw;
     height: 56.25vw;
     position: absolute;
 }
+
 
 #game_foreground {
     background-image: url(grafik/nyforgrund.svg);
@@ -24,13 +29,95 @@ body {
     height: 56.25vw;
     position: absolute;
     top: 0vw;
+    pointer-events: none;
 }
+
 
 
 
 /********* GAME ELEMENTER ***********/
 
-#diamant1 {
+
+.type1 {
+    background-image: url(grafik/baby.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    cursor: pointer;
+}
+
+.type2 {
+    background-image: url(grafik/diamant.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    cursor: pointer;
+}
+
+.type3 {
+    background-image: url(grafik/hest.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9.7vw;
+    position: absolute;
+    cursor: pointer;
+}
+
+.position1 {
+    top: 24.7vw;
+    left: 2vw;
+}
+
+.position2 {
+    top: 31vw;
+    left: 14.1vw;
+    transform: scale(0.8);
+}
+
+.position3 {
+    top: 22.4vw;
+    left: 18.5vw;
+}
+
+.position4 {
+    top: 29.7vw;
+    left: 30vw;
+    transform: scale(0.8)
+}
+
+.position5 {
+    top: 21.9vw;
+    left: 34vw;
+}
+
+.position6 {
+    top: 32.7vw;
+    left: 45.5vw;
+}
+
+.position7 {
+    top: 29vw;
+    left: 58.2vw;
+}
+
+.position8 {
+    top: 18.5vw;
+    left: 66.7vw;
+}
+
+.position9 {
+    top: 21.7vw;
+    left: 79.2vw;
+}
+
+.position10 {
+    top: 33.2vw;
+    left: 84vw;
+}
+
+/*#diamant1 {
     background-image: url(grafik/diamant.svg);
     background-size: 100%;
     width: 10vw;
@@ -339,20 +426,20 @@ body {
     left: 84vw;
 }
 
-
+*/
 
 /************HIDE/SHOW GAME ELEMENTER**********/
 
 .in_out1 {
     animation-name: in_out1;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
 
 .in_out2 {
     animation-name: in_out2;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
     animation-delay: 4s;
@@ -360,10 +447,34 @@ body {
 
 .in_out3 {
     animation-name: in_out3;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
     animation-delay: 8s;
+}
+
+.in_out4 {
+    animation-name: in_out4;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-delay: 12s;
+}
+
+.in_out5 {
+    animation-name: in_out5;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-delay: 16s;
+}
+
+.in_out6 {
+    animation-name: in_out6;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-delay: 20s;
 }
 
 @keyframes in_out1 {
@@ -420,17 +531,127 @@ body {
     }
 }
 
+@keyframes in_out4 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes in_out5 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes in_out6 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 /************UI GAME ELEMENTER**********/
 
 #points {
-    background-image: url(grafik/point.svg);
+    background-image: url(grafik/nypoint.svg);
     background-size: 100%;
     width: 6.5vw;
     height: 3.5vw;
     position: absolute;
-    top: 2vw;
+    top: 2.2vw;
     left: 46.7vw;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 1rem;
+    display: flex;
 }
+
+
+/*
+#points {
+  position: absolute;
+  left: 87vw;
+  color: white;
+  font-size: 2rem;
+  font-family: sans-serif;
+  display: flex;
+}
+*/
+
+/*
+#points .coin {
+  background-image: url(coin.svg);
+  background-size: 100%;
+  width: 2rem;
+  height: 2rem;
+}
+*/
+
+#points .antal {
+    /*  outline: 2px solid red;*/
+    font-feature-settings: tnum;
+    width: 20vw;
+    left: 20vw;
+    text-align: right;
+    position: absolute;
+}
+
+
+#energy {
+    position: absolute;
+    left: 84.7vw;
+    top: 2vw;
+    width: 12vw;
+    height: 3.3vw;
+    /*  outline: 2px solid red;*/
+    display: flex;
+    direction: row;
+    justify-content: space-around;
+}
+
+.liv {
+    width: 4vw;
+    height: 3.3vw;
+    background-size: 100%;
+    background-image: url(grafik/1_liv.svg);
+}
+
+/*
 
 #life {
     background-image: url(grafik/1_liv.svg);
@@ -461,6 +682,7 @@ body {
     top: 2vw;
     left: 84.7vw;
 }
+*/
 
 #time {
     background-image: url(grafik/tid.svg);
@@ -477,7 +699,7 @@ body {
 
 
 #start {
-    background-image: url(grafik/titelsk%C3%A6rm_baggrund.svg);
+    background-image: url(grafik/nytitel.svg);
     background-size: 100%;
     width: 100vw;
     height: 56.25vw;
@@ -505,7 +727,6 @@ body {
     position: absolute;
     top: 15vw;
     left: 25vw;
-    display: none;
 }
 
 #luk {
@@ -514,9 +735,8 @@ body {
     width: 10vw;
     height: 9vw;
     position: absolute;
-    top: 16vw;
-    left: 64vw;
-    display: none;
+    top: 1.5vw;
+    left: 38vw;
 }
 
 #settings_knap {
@@ -527,7 +747,6 @@ body {
     position: absolute;
     top: 1vw;
     right: 1vw;
-    display: none;
 }
 
 #start_foreground {
@@ -537,7 +756,8 @@ body {
     height: 56.25vw;
     position: absolute;
     top: 0vw;
-    display: none;
+    pointer-events: none;
+    z-index: 1;
 }
 
 
@@ -552,7 +772,6 @@ body {
     position: absolute;
     top: 10vw;
     left: 22vw;
-    display: none;
 }
 
 #tryagain {
@@ -561,9 +780,8 @@ body {
     width: 20vw;
     height: 7vw;
     position: absolute;
-    top: 36vw;
-    left: 39vw;
-    display: none;
+    top: 27vw;
+    left: 34vw;
 }
 
 #levelcomplete {
@@ -574,7 +792,6 @@ body {
     position: absolute;
     top: 10vw;
     left: 22vw;
-    display: none;
 }
 
 #tryagain2 {
@@ -583,9 +800,8 @@ body {
     width: 20vw;
     height: 7vw;
     position: absolute;
-    top: 36vw;
-    left: 39vw;
-    display: none;
+    top: 27vw;
+    left: 34vw;
 }
 
 
@@ -599,6 +815,7 @@ body {
     position: absolute;
     top: 10vw;
     left: 22vw;
+    z-index: 1;
 }
 
 #luk2 {
@@ -607,27 +824,20 @@ body {
     width: 10vw;
     height: 9vw;
     position: absolute;
-    top: 10vw;
-    left: 66vw;
+    top: 0vw;
+    left: 43.5vw;
 }
 
 
 /************************************ klik på play ********/
 
-
-/*  touch-action: none;*/
--moz-user-select: none;
--webkit-user-select: none;
-user-select: none;
-}
-
 /* effekter */
 .hide {
-    visibility: hidden
+    display: none;
 }
 
 .show {
-    visibility: visible;
+    display: block;
 }
 
 .blur {
@@ -662,7 +872,7 @@ user-select: none;
 
 @keyframes pulse_kf {
     0% {
-        transform: scale(0.97);
+        transform: scale(0.77);
     }
 
     100% {
@@ -694,3 +904,100 @@ cursor: pointer;
         transform: scale(0);
     }
 }
+
+.explode {
+    animation-name: explode_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes explode_kf {
+    from {
+        transform: translate(-55vw, -55vw) scale(.1) rotate(0);
+    }
+
+    to {
+        transform: translate(-55vw, -55vw) scale(3) rotate(-30deg);
+    }
+}
+
+.shake {
+    /*  background-color: red;*/
+    width: 100vw;
+    height: 56.25vw;
+
+    animation-name: shake_kf;
+    animation-duration: .2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes shake_kf {
+    0% {
+        background-color: transparent;
+        transform: rotate(0) scale(1);
+    }
+
+    10% {
+        background-color: rgba(255, 246, 27, 0.7);
+        transform: rotate(-5deg) scale(1.5);
+    }
+
+    50% {
+        background-color: rgba(255, 165, 0, 0.7);
+        transform: rotate(10deg) scale(1.5);
+    }
+
+    100% {
+        background-color: rgba(255, 0, 0, 0.7);
+        transform: rotate(-10deg) scale(1.5);
+    }
+}
+
+.paused {
+    animation-play-state: paused;
+}
+
+/* UI
+#points {
+  position: absolute;
+  left: 87vw;
+  color: white;
+  font-size: 2rem;
+  font-family: sans-serif;
+  display: flex;
+}
+
+#points .coin {
+  background-image: url(coin.svg);
+  background-size: 100%;
+  width: 2rem;
+  height: 2rem;
+}
+
+#points .antal {
+/*  outline: 2px solid red;
+  font-feature-settings: tnum;
+  width: 6rem;
+  text-align: right;
+}
+
+#energy {
+  position: absolute;
+  left: 87vw;
+  top: 3rem;
+  width: 6rem;
+/*  outline: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heart {
+  width: 2rem;
+  height: 2rem;
+  background-image: url(heart.svg);
+  background-size: 100%;
+}
+*/

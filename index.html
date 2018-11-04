@@ -6,78 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sats eller Safari</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 </head>
 
 <body>
     <div id="screen">
-        <div id="menu_background" class="hide"></div>
-        <div id="game" class="hide">
-            <div id="game_background"></div>
+        <div id="menu_background"></div>
+        <div id="game">
+            <div id="game_background" class="aftergame"></div>
 
-            <div id="game_elements">
-                <div id="baby1"></div>
-                <div id="baby2"></div>
-                <div id="baby3"></div>
-                <div id="baby4"></div>
-                <div id="baby5"></div>
-                <div id="baby6"></div>
-                <div id="baby7"></div>
-                <div id="baby8"></div>
-                <div id="baby9"></div>
-                <div id="baby10"></div>
-                <div id="hest1"></div>
-                <div id="hest2"></div>
-                <div id="hest3"></div>
-                <div id="hest4"></div>
-                <div id="hest5"></div>
-                <div id="hest6"></div>
-                <div id="hest7"></div>
-                <div id="hest8"></div>
-                <div id="hest9"></div>
-                <div id="hest10"></div>
-                <div id="diamant1"></div>
-                <div id="diamant2"></div>
-                <div id="diamant3"></div>
-                <div id="diamant4"></div>
-                <div id="diamant5"></div>
-                <div id="diamant6"></div>
-                <div id="diamant7"></div>
-                <div id="diamant8"></div>
-                <div id="diamant9"></div>
-                <div id="diamant10"></div>
+            <div id="startinfo" class="hide">
+                <div id="luk2"></div>
             </div>
 
-            <div id="game_foreground" class="hide"></div>
+            <div id="game_elements" class="hide aftergame">
+                <div id="figur1" class="type1 position1"></div>
+                <div id="figur2" class="type2 position2"></div>
+                <div id="figur3" class="type3 position3"></div>
+                <div id="figur4" class="type1 position4"></div>
+                <div id="figur5" class="type2 position5"></div>
+                <div id="figur6" class="type3 position6"></div>
+            </div>
 
-            <div id="game_ui" class="hide">
-                <div id="points"></div>
-                <div id="energy">
-                    <div id="life"></div>
-                    <div id="life2"></div>
-                    <div id="life3"></div>
-                    <div id="nolife"></div>
-                    <div id="nolife2"></div>
-                    <div id="nolife3"></div>
+            <div id="game_foreground" class="aftergame"></div>
+
+            <div id="game_ui">
+                <div id="points">
+                    <span class="antal">0</span>
                 </div>
+                <div id="energy">
+                    <div id="liv1" class="liv"></div>
+                    <div id="liv2" class="liv"></div>
+                    <div id="liv3" class="liv"></div>
+                </div>
+
                 <div id="time"></div>
-                <div id="startinfo"></div>
-                <div id="luk2"></div>
             </div>
         </div>
 
         <div id="start" class="hide">
+            <div id="start_foreground"></div>
             <div id="play"></div>
-        </div>
-        <div id="start_ui" class="hide">
             <div id="settings_knap"></div>
+        </div>
+
+        <div id="settings" class="hide">
+            <div id="luk"></div>
+        </div>
+
+        <div id="gameover" class="hide">
             <div id="tryagain"></div>
+        </div>
+
+        <div id="levelcomplete" class="hide">
             <div id="tryagain2"></div>
         </div>
-        <div id="start_foreground" class="hide"></div>
-        <div id="settings" class="hide"></div>
-        <div id="luk" class="hide"></div>
-        <div id="gameover" class="hide"></div>
-        <div id="levelcomplete" class="hide"></div>
     </div>
 
 
