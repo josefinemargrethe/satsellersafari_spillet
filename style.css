@@ -673,6 +673,16 @@ body {
     left: 2.7vw;
 }
 
+/*#settings_knap2 {
+    background-image: url(grafik/settings_knap.svg);
+    background-size: 100%;
+    width: 5vw;
+    height: 5.2vw;
+    position: absolute;
+    top: 48.6vw;
+    left: 2.3vw;
+}*/
+
 
 /***** TITELSKÆRM hvor der er sat display: none *****/
 
@@ -718,6 +728,16 @@ body {
     left: 38vw;
 }
 
+/*#luk3 {
+    background-image: url(grafik/luk_knap.svg);
+    background-size: 100%;
+    width: 10vw;
+    height: 9vw;
+    position: absolute;
+    top: 1.5vw;
+    left: 38vw;
+}*/
+
 #settings_knap {
     background-image: url(grafik/settings_knap.svg);
     background-size: 100%;
@@ -739,18 +759,54 @@ body {
     z-index: 1;
 }
 
+/*TOGGLE*/
+
+#sfx {
+    width: 10vw;
+    height: 4.36vw;
+    display: inline-block;
+    position: absolute;
+    left: 29vw;
+    top: 11.1vw;
+}
+
+#music {
+    width: 10vw;
+    height: 4.36vw;
+    display: inline-block;
+    position: absolute;
+    left: 29vw;
+    top: 18vw;
+}
+
+
+.on {
+    background-image: url(grafik/on.svg);
+    background-size: 100%;
+
+    /*    background-color: red;*/
+
+}
+
+.off {
+    background-image: url(grafik/off.svg);
+    background-size: 100%;
+
+    /*    background-color: red;*/
+}
 
 
 /***************** SPIL SLUT med display:none*******************/
 
 #gameover {
-    background-image: url(grafik/game_over.svg);
+    background-image: url(grafik/nygameover.svg);
     background-size: 100%;
     width: 55vw;
     height: 36vw;
     position: absolute;
     top: 10vw;
     left: 22vw;
+    z-index: 10;
 }
 
 #tryagain {
@@ -771,6 +827,7 @@ body {
     position: absolute;
     top: 10vw;
     left: 22vw;
+    z-index: 10;
 }
 
 #tryagain2 {
