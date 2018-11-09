@@ -20,19 +20,31 @@
             </div>
 
             <div id="game_elements" class="hide aftergame">
-                <div id="figur1" class="type1 position1"></div>
-                <div id="figur2" class="type2 position2"></div>
-                <div id="figur3" class="type3 position3"></div>
-                <div id="figur4" class="type1 position4"></div>
-                <div id="figur5" class="type2 position5"></div>
-                <div id="figur6" class="type3 position6"></div>
+                <div id="figur1" class="type1 position1">
+                    <div id="babysprite" class="baby_kf"></div>
+                </div>
+                <div id="figur2" class="type2 position2">
+                    <div id="diamantsprite" class="baby_kf"></div>
+                </div>
+                <div id="figur3" class="type3 position3">
+                    <div id="hestesprite" class="baby_kf"></div>
+                </div>
+                <div id="figur4" class="type1 position4">
+                    <div id="babysprite" class="baby_kf"></div>
+                </div>
+                <div id="figur5" class="type2 position5">
+                    <div id="diamantsprite" class="baby_kf"></div>
+                </div>
+                <div id="figur6" class="type3 position6">
+                    <div id="hestesprite" class="baby_kf"></div>
+                </div>
             </div>
 
             <div id="game_foreground" class="aftergame"></div>
 
             <div id="game_ui">
                 <div id="points">
-                    <span class="antal">0</span>
+                    <div id="antal">0</div>
                 </div>
                 <div id="energy">
                     <div id="liv1" class="liv"></div>
@@ -40,7 +52,9 @@
                     <div id="liv3" class="liv"></div>
                 </div>
 
-                <div id="time"></div>
+                <div id="time">
+                    <div id="tidtilbage"></div>
+                </div>
 
                 <div id="settings_knap2"></div>
 
@@ -49,7 +63,9 @@
 
         <div id="start" class="hide">
             <div id="start_foreground"></div>
-            <div id="play"></div>
+            <div id="play">
+                <div id="playsprite" class="baby_kf"></div>
+            </div>
             <div id="settings_knap"></div>
         </div>
 
@@ -79,6 +95,8 @@
         <audio src="lyde/godtarbejde.mp3" id="sfx1"></audio>
         <audio src="lyde/ejdet.mp3" id="sfx2"></audio>
         <audio src="lyde/hestlyd.wav" id="sfx3"></audio>
+        <audio src="lyde/babylyd.wav" id="winsound"></audio>
+        <audio src="lyde/diamantlyd.wav" id="losesound"></audio>
         <audio src="lyde/bensound-instinct.mp3" id="myMusic"></audio>
     </div>
 

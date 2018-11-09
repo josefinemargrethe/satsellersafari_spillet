@@ -35,35 +35,89 @@ body {
 
 
 
-/********* GAME ELEMENTER ***********/
+/********************** GAME ELEMENTER ************************/
 
 
 .type1 {
-    background-image: url(grafik/baby.svg);
+    /*background-image: url(grafik/baby.svg);*/
     background-size: 100%;
     width: 10vw;
-    height: 9.7vw;
+    height: 10vw;
     position: absolute;
     cursor: pointer;
 }
 
+#figur1,
+#figur2,
+#figur3,
+#figur4,
+#figur5,
+#figur6 {
+    position: absolute;
+}
+
 .type2 {
-    background-image: url(grafik/diamant.svg);
+    /*background-image: url(grafik/diamant.svg);*/
     background-size: 100%;
     width: 10vw;
-    height: 9.7vw;
+    height: 10vw;
     position: absolute;
     cursor: pointer;
 }
 
 .type3 {
-    background-image: url(grafik/hest.svg);
+    /*background-image: url(grafik/hest.svg);*/
     background-size: 100%;
     width: 10vw;
-    height: 9.7vw;
+    height: 10vw;
     position: absolute;
     cursor: pointer;
 }
+
+#babysprite {
+    background-size: 300% 100%;
+    width: 10vw;
+    height: 10vw;
+    background-image: url(grafik/nybaby_sprite.svg);
+}
+
+#diamantsprite {
+    background-size: 300% 100%;
+    width: 10vw;
+    height: 10vw;
+    background-image: url(grafik/diamant_sprite.svg);
+}
+
+#hestesprite {
+    background-size: 300% 100%;
+    width: 10vw;
+    height: 10vw;
+    background-image: url(grafik/hestesprite.svg);
+}
+
+.baby_kf {
+    animation-name: baby_kf;
+    animation-duration: 0.65s;
+    animation-iteration-count: infinite;
+    /*    animation-fill-mode: both;*/
+    animation-timing-function: steps(3);
+}
+
+@keyframes baby_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: -300% 0%;
+    }
+}
+
+
+
+
+/****************** POSITIONER **********************/
+
 
 .position1 {
     top: 24.7vw;
@@ -595,19 +649,18 @@ body {
     position: absolute;
     top: 2.2vw;
     left: 46.7vw;
-    color: black;
-    font-family: 'VT323', monospace;
-    font-size: 1rem;
     display: flex;
 }
 
-#points .antal {
+#antal {
     /*  outline: 2px solid red;*/
-    font-feature-settings: tnum;
-    width: 20vw;
-    left: 20vw;
+    left: 0.7vw;
+    top: 0.7vw;
     text-align: right;
     position: absolute;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 2vw;
 }
 
 
@@ -664,7 +717,7 @@ body {
 */
 
 #time {
-    background-image: url(grafik/tid.svg);
+    background-image: url(grafik/nytid.svg);
     background-size: 100%;
     width: 8.5vw;
     height: 3.5vw;
@@ -673,15 +726,17 @@ body {
     left: 2.7vw;
 }
 
-/*#settings_knap2 {
-    background-image: url(grafik/settings_knap.svg);
-    background-size: 100%;
-    width: 5vw;
-    height: 5.2vw;
+#tidtilbage {
+    left: 1.2vw;
+    top: 0.6vw;
+    text-align: right;
     position: absolute;
-    top: 48.6vw;
-    left: 2.3vw;
-}*/
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 2vw;
+}
+
+
 
 
 /***** TITELSKÆRM hvor der er sat display: none *****/
@@ -699,13 +754,21 @@ body {
 
 
 #play {
-    background-image: url(grafik/play_knap.svg);
+    /*background-image: url(grafik/play_knap.svg);*/
     background-size: 100%;
-    width: 17vw;
-    height: 10.4vw;
+    width: 20vw;
+    height: 20vw;
     position: absolute;
-    top: 21vw;
-    left: 42vw;
+    top: 16vw;
+    left: 40vw;
+    cursor: pointer;
+}
+
+#playsprite {
+    background-size: 300% 100%;
+    width: 20vw;
+    height: 20vw;
+    background-image: url(grafik/nyplayknap.svg);
 }
 
 #settings {
@@ -726,6 +789,7 @@ body {
     position: absolute;
     top: 1.5vw;
     left: 38vw;
+    cursor: pointer;
 }
 
 /*#luk3 {
@@ -746,6 +810,7 @@ body {
     position: absolute;
     top: 1vw;
     right: 1vw;
+    cursor: pointer;
 }
 
 #start_foreground {
@@ -783,6 +848,7 @@ body {
 .on {
     background-image: url(grafik/on.svg);
     background-size: 100%;
+    cursor: pointer;
 
     /*    background-color: red;*/
 
@@ -791,6 +857,7 @@ body {
 .off {
     background-image: url(grafik/off.svg);
     background-size: 100%;
+    cursor: pointer;
 
     /*    background-color: red;*/
 }
@@ -817,6 +884,7 @@ body {
     position: absolute;
     top: 27vw;
     left: 34vw;
+    cursor: pointer;
 }
 
 #levelcomplete {
@@ -838,6 +906,7 @@ body {
     position: absolute;
     top: 27vw;
     left: 34vw;
+    cursor: pointer;
 }
 
 
@@ -862,6 +931,7 @@ body {
     position: absolute;
     top: 0vw;
     left: 43.5vw;
+    cursor: pointer;
 }
 
 
@@ -908,7 +978,7 @@ body {
 
 @keyframes pulse_kf {
     0% {
-        transform: scale(0.77);
+        transform: scale(0.95);
     }
 
     100% {
@@ -916,8 +986,7 @@ body {
     }
 }
 
-cursor: pointer;
-}
+
 
 
 
