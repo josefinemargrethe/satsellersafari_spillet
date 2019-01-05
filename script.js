@@ -73,6 +73,10 @@ function soundsOff() {
     document.querySelector("#sfx1").muted = true;
     document.querySelector("#sfx2").muted = true;
     document.querySelector("#sfx3").muted = true;
+    document.querySelector("#winsound").muted = true;
+    document.querySelector("#losesound").muted = true;
+
+
 
 
 }
@@ -86,6 +90,8 @@ function soundsOn() {
     document.querySelector("#sfx1").muted = false;
     document.querySelector("#sfx2").muted = false;
     document.querySelector("#sfx3").muted = false;
+    document.querySelector("#winsound").muted = false;
+    document.querySelector("#losesound").muted = false;
 
 }
 
